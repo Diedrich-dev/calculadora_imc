@@ -1,22 +1,17 @@
-import { StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   formContext: {
-    width: '100%',
-    height: '100%',
-    bottom: 0,
+    flex: 1,
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
-    marginTop: 30,
+    paddingTop: 30,
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
   },
 
   form: {
     width: '100%',
-    height: 'auto',
-    marginTop: 30,
-    padding: 10,
   },
 
   formLabel: {
@@ -49,7 +44,46 @@ const styles = StyleSheet.create({
     paddingBottom: 14,
     marginLeft: 12,
     marginTop: 30,
-  }
+  },
+
+  errorMessage: {
+    fontSize: 12,
+    color: 'red',
+    fontWeight: 'bold',
+    paddingLeft: 20,
+  },
+
+  exibitionResultImc: {
+    width: '100%',
+    height: '50%',
+  },
+
+  listImcs: {
+    marginTop: 20,
+    padding: 5,
+    width: '90%',
+    borderRadius: 50,
+  },
+
+  resultImcItem: {
+    fontSize: 26,
+    color: 'red',
+    height: 50,
+    width: '100%',
+    paddingRight: 20,
+  },
+
+  textResultItemList: {
+    color: 'red',
+    fontSize: 16,
+    marginLeft: 80,
+  },
+
+  resultTextPlusItem: {
+    backgroundColor: '#F6F6F6',
+    borderRadius: 35,
+    margin: 2,
+  },
 });
 
 export default styles
